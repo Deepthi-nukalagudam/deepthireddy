@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Geospatial Visualizations - Major Assignment 2</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Geospatial Visualizations - Major Assignment 2</h1>
+      <h3>Deepthi Nukalagudam</h3>
+    </header>
+
+    <main class="card-list">
+      <section class="card">
+        <h2>MAP A - Actual Population (1980)</h2>
+        <div class="map-viewport" id="mapA">
+          <div class="map-placeholder"></div>
+        </div>
+        <div class="legend-row">
+          <div class="legend-label">Population 1980</div>
+          <div class="colorbar" id="colorbarA"></div>
+          <div class="legend-values"><span>90,000</span><span>150,000</span></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>MAP B - Population change (1980 -> 2010)</h2>
+        <div class="map-viewport" id="mapB">
+          <div class="map-placeholder"></div>
+        </div>
+        <div class="legend-row">
+          <div class="legend-label">Population change (2010 - 1980)</div>
+          <div class="colorbar" id="colorbarB"></div>
+          <div class="legend-values"><span>-5,000</span><span>0</span><span>10,000</span></div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>MAP C - Gini Index (2019)</h2>
+        <div class="map-viewport" id="mapC">
+          <div class="map-placeholder" id="mapCplaceholder"></div>
+        </div>
+        <div class="legend-row">
+          <div class="legend-label">Gini 2019</div>
+          <div class="colorbar" id="colorbarC"></div>
+          <div class="legend-values"><span>0</span><span>0</span></div>
+        </div>
+      </section>
+    </main>
+
+    <div id="tooltip" class="tooltip" style="display:none;">
+      <div id="tip-title">County C</div>
+      <div id="tip-stats">Pop 1980: 150,000<br>Pop 2010: 160,000<br>Gini 2019: 0.400</div>
+      <svg id="tip-spark" width="220" height="80"></svg>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
